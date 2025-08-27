@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "pnpm run clean && pnpm run init",
+    "clean": "npx rimraf --glob **/node_modules **/dist **/.nuxt ./pnpm-lock.yaml",
+    "init": "pnpm install",
+    "link": "pnpm --filter './packages/*' dev:link",
+    "dev": "pnpm --filter showcase dev",
+    "preview": "pnpm --filter showcase preview",
+    "hot:dev": "DEV_ENV=hot pnpm --filter showcase dev",
+    "build:showcase": "pnpm --filter showcase build"
   },
   "keywords": [],
   "author": "",
