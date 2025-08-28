@@ -1,1 +1,1 @@
-{"version":3,"file":"dock.js","sourceRoot":"","sources":["../../src/components/dock.ts"],"names":[],"mappings":"AAAA,OAAO,IAAI,MAAM,4BAA4B,CAAC;AAC9C,eAAe,IAAI,CAAC"}
+{"version":3,"file":"dock.js","sourceRoot":"","sources":["../../src/components/dock.ts"],"names":[],"mappings":"AAAA,kGAAkG;AAClG,OAAO,IAAI,MAAM,4BAA4B,CAAC;AAC9C,eAAe,IAAI,CAAC"}

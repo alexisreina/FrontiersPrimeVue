@@ -1,1 +1,1 @@
-{"version":3,"file":"scrollpanel.d.ts","sourceRoot":"","sources":["../../src/components/scrollpanel.ts"],"names":[],"mappings":"AAAA,OAAO,WAAW,MAAM,mCAAmC,CAAC;AAC5D,eAAe,WAAW,CAAC"}
+{"version":3,"file":"scrollpanel.d.ts","sourceRoot":"","sources":["../../src/components/scrollpanel.ts"],"names":[],"mappings":"AACA,OAAO,WAAW,MAAM,mCAAmC,CAAC;AAC5D,eAAe,WAAW,CAAC"}

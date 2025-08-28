@@ -3,6 +3,7 @@ import path from 'path';
 const baseUrl = '/';
 
 const alias = {
+    'frontiers-primevue-preset': path.resolve(__dirname, '../../packages/preset/dist/index.js'),
 //     primevue: path.resolve(__dirname, '../../packages/primevue/src'),
 //     '@primevue/core': path.resolve(__dirname, '../../packages/core/src'),
 //     '@primevue/icons': path.resolve(__dirname, '../../packages/icons/src')
@@ -45,7 +46,7 @@ export default defineNuxtConfig({
         '/installation': { redirect: { to: '/vite', statusCode: 301 } }
     },
     primevue: {
-        usePrimeVue: process.env.DEV_ENV !== 'hot',
+        usePrimeVue: true, //process.env.DEV_ENV !== 'hot',
         autoImport: true, // When enabled, the module automatically imports PrimeVue components and directives used throughout the application.
         importTheme: { from: '@/themes/app-theme.js' }
     },

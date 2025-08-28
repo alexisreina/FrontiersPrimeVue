@@ -2,6 +2,7 @@
   "name": "frontiers-primevue-preset",
   "version": "1.0.0",
   "description": "Frontiers custom preset for PrimeVue, based on Lara preset",
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -21,7 +22,8 @@
     "dev": "pnpm exec tsc --watch",
     "clean": "rimraf dist",
     "prebuild": "pnpm clean",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "dev:link": "pnpm link --global && npm link"
   },
   "keywords": [
     "primevue",
@@ -31,11 +33,10 @@
   "author": "Alexis Reina",
   "license": "ISC",
   "packageManager": "pnpm@10.15.0",
-  "peerDependencies": {
-    "@primeuix/themes": ">=1.0.0"
+  "dependencies": {
+    "@primeuix/themes": "catalog:"
   },
   "devDependencies": {
-    "@primeuix/themes": "catalog:",
     "typescript": "^5.0.0",
     "rimraf": "^5.0.0"
   }
