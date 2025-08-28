@@ -8,10 +8,14 @@
     "clean": "npx rimraf --glob **/node_modules **/dist **/.nuxt ./pnpm-lock.yaml",
     "init": "pnpm install",
     "link": "pnpm --filter './packages/*' dev:link",
-    "dev": "pnpm --filter showcase dev",
+    "dev:showcase": "pnpm --filter showcase dev",
+    "dev:preset": "pnpm --filter frontiers-primevue-preset dev",
+    "dev": "concurrently --names \"showcase,preset\" --prefix-colors \"cyan,magenta\" --kill-others-on-fail \"pnpm dev:showcase\" \"pnpm dev:preset\"",
     "preview": "pnpm --filter showcase preview",
     "hot:dev": "DEV_ENV=hot pnpm --filter showcase dev",
-    "build:showcase": "pnpm --filter showcase build"
+    "build:showcase": "pnpm --filter showcase build",
+    "build:preset": "pnpm --filter frontiers-primevue-preset build",
+    "build": "pnpm build:preset && pnpm build:showcase"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +24,8 @@
     "node": ">=22.18.0"
   },
   "type": "module",
-  "packageManager": "pnpm@10.15.0"
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
