@@ -118,6 +118,18 @@ importers:
         specifier: catalog:app
         version: 6.0.11(@types/node@24.3.0)(jiti@2.5.1)(sass@1.45.0)(terser@5.43.1)(yaml@2.8.1)
 
+  packages/preset:
+    devDependencies:
+      '@primeuix/themes':
+        specifier: 'catalog:'
+        version: 1.2.3
+      rimraf:
+        specifier: ^5.0.0
+        version: 5.0.10
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.2
+
 packages:
 
   '@algolia/abtesting@1.2.0':
@@ -3818,6 +3830,10 @@ packages:
 
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
+
+  rimraf@5.0.10:
+    resolution: {integrity: sha512-l0OE8wL34P4nJH/H2ffoaniAokM2qSmrtXHmlpvYr5AVVX8msAyW0l8NVJFDxlSK4u3Uh/f41cQheDVdnYijwQ==}
+    hasBin: true
 
   rollup-plugin-visualizer@5.14.0:
     resolution: {integrity: sha512-VlDXneTDaKsHIw8yzJAFWtrzguoJ/LnQ+lMpoVfYJ3jJF4Ihe5oYLAqLklIK/35lgUY+1yEzCkHyZ1j4A5w5fA==}
@@ -8911,6 +8927,10 @@ snapshots:
   reusify@1.1.0: {}
 
   rfdc@1.4.1: {}
+
+  rimraf@5.0.10:
+    dependencies:
+      glob: 10.4.5
 
   rollup-plugin-visualizer@5.14.0(rollup@4.49.0):
     dependencies:
