@@ -1,1 +1,1 @@
-{"version":3,"file":"virtualscroller.js","sourceRoot":"","sources":["../../src/components/virtualscroller.ts"],"names":[],"mappings":"AAAA,OAAO,eAAe,MAAM,uCAAuC,CAAC;AACpE,eAAe,eAAe,CAAC"}
+{"version":3,"file":"virtualscroller.js","sourceRoot":"","sources":["../../src/components/virtualscroller.ts"],"names":[],"mappings":"AAAA,6GAA6G;AAC7G,OAAO,eAAe,MAAM,uCAAuC,CAAC;AACpE,eAAe,eAAe,CAAC"}

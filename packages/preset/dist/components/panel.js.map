@@ -1,1 +1,1 @@
-{"version":3,"file":"panel.js","sourceRoot":"","sources":["../../src/components/panel.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,6BAA6B,CAAC;AAChD,eAAe,KAAK,CAAC"}
+{"version":3,"file":"panel.js","sourceRoot":"","sources":["../../src/components/panel.ts"],"names":[],"mappings":"AAAA,mGAAmG;AACnG,OAAO,KAAK,MAAM,6BAA6B,CAAC;AAChD,eAAe,KAAK,CAAC"}

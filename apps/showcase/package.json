@@ -46,6 +46,7 @@
         "@primevue/nuxt-module": "latest",
         "primeicons": "catalog:",
         "primevue": "latest",
+        "frontiers-primevue-preset": "workspace:*",
         "chart.js": "catalog:app",
         "quill": "catalog:app",
         "superstruct": "^2.0.2",

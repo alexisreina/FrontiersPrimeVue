@@ -39,9 +39,9 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
     nuxtApp.vueApp.use($appState);
 
-    if (runtimeConfig.public.DEV_ENV === 'hot') {
+    //if (runtimeConfig.public.DEV_ENV === 'hot') {
         nuxtApp.vueApp.use(PrimeVue, {
             theme: AppTheme
         });
-    }
+    //}
 });

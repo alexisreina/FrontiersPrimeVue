@@ -1,5 +1,6 @@
 // @ts-ignore
 // import '@primeuix/styles'; // When styles change, the app will hot reload.
+import FrontiersPreset from 'frontiers-primevue-preset';
 
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
@@ -53,7 +54,7 @@ export const NoirPreset = definePreset(Aura, {
 });
 
 export default {
-    preset: NoirPreset,
+    preset: FrontiersPreset,
     options: {
         darkModeSelector: '.p-dark'
     }
