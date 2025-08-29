@@ -29,17 +29,21 @@
                     ></button>
                 </div>
             </div>
+            <!--
             <div class="config-panel-settings">
                 <span class="config-panel-label">Theme</span>
                 <SelectButton v-model="$appState.preset" @update:modelValue="onPresetChange" :options="presetOptions" optionLabel="label" optionValue="value" :allowEmpty="false" size="small" />
             </div>
+            -->
             <div class="flex">
+                <!--
                 <div class="flex-1">
                     <div class="config-panel-settings">
                         <span class="config-panel-label">Ripple</span>
                         <ToggleSwitch :modelValue="rippleActive" @update:modelValue="onRippleChange" />
                     </div>
                 </div>
+                -->
                 <div class="flex-1">
                     <div class="config-panel-settings items-end">
                         <span class="config-panel-label">RTL</span>
