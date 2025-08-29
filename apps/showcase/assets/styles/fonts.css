@@ -1,0 +1,53 @@
+/* Frontiers Custom Fonts */
+
+/* Museo Sans 300 - Light */
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('https://static2.frontiersin.org/static-resources/MuseoSans300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Museo Sans 500 - Medium/Regular */
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('https://static2.frontiersin.org/static-resources/MuseoSans500.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Museo Sans 700 - Bold */
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('https://static2.frontiersin.org/static-resources/MuseoSans700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Frontiers Iconography */
+@font-face {
+    font-family: 'Frontiers Iconography';
+    src: url('https://static2.frontiersin.org/static-resources/FrontiersIconography.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Icon utility class for Frontiers icons */
+.frontiers-icon {
+    font-family: 'Frontiers Iconography', monospace;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
