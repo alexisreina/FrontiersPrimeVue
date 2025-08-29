@@ -6,7 +6,7 @@ const $appState = {
     install: (Vue) => {
         Vue.config.globalProperties.$appState = reactive({
             preset: 'Aura',
-            primary: 'noir',
+            primary: 'emerald',
             surface: null,
             darkTheme: false,
             codeSandbox: false,
@@ -21,12 +21,7 @@ const $appState = {
                 active: false,
                 activeView: 'dashboard',
                 activeTab: '0',
-                theme: {
-                    key: null,
-                    name: null,
-                    preset: null,
-                    config: null
-                },
+                theme: AppTheme,
                 acTokens: [],
                 themes: []
             }
@@ -35,13 +30,13 @@ const $appState = {
 };
 
 export default defineNuxtPlugin(async (nuxtApp) => {
-    const runtimeConfig = useRuntimeConfig();
+    //const runtimeConfig = useRuntimeConfig();
 
     nuxtApp.vueApp.use($appState);
 
     //if (runtimeConfig.public.DEV_ENV === 'hot') {
-        nuxtApp.vueApp.use(PrimeVue, {
-            theme: AppTheme
-        });
+    //    nuxtApp.vueApp.use(PrimeVue, {
+    //        theme: AppTheme
+    //    });
     //}
 });

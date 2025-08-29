@@ -41,6 +41,14 @@ If you need to clean and reinstall everything:
 pnpm setup
 ```
 
+## 🌐 Live Demo
+
+The project is deployed and accessible at:
+
+**🚀 [Live Showcase](https://frontiers-prime-vue-showcase.vercel.app/)**
+
+Visit the live deployment to explore all components, themes, and features without setting up the project locally.
+
 ## 📁 Project Structure
 
 ```

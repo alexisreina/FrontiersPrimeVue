@@ -1,13 +1,3 @@
-declare const _default: {
-    colorScheme: {
-        light: {
-            root: {
-                primary: {
-                    background: string;
-                };
-            };
-        };
-    };
-};
-export default _default;
+import button from '@primeuix/themes/lara/button';
+export default button;
 //# sourceMappingURL=button.d.ts.map
