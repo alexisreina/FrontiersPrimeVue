@@ -71,8 +71,7 @@ export default defineNuxtConfig({
                 { property: 'og:ttl', content: '604800' }
             ],
             link: [
-                { rel: 'icon', href: baseUrl + 'favicon.ico' },
-                { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+                { rel: 'icon', href: baseUrl + 'favicon.ico' }
             ],
             script: [
                 {
@@ -95,5 +94,5 @@ export default defineNuxtConfig({
             designerApiUrl: ''
         }
     },
-    css: ['primeicons/primeicons.css', '@/assets/styles/flags.css', '@docsearch/css/dist/style.css', '@/assets/styles/tailwind/main.css', '@/assets/styles/layout/layout.scss']
+    css: ['primeicons/primeicons.css', '@/assets/styles/fonts.css', '@/assets/styles/flags.css', '@docsearch/css/dist/style.css', '@/assets/styles/tailwind/main.css', '@/assets/styles/layout/layout.scss']
 });
