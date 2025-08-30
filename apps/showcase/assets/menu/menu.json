@@ -513,12 +513,6 @@
             "to": "/tailwind"
         },
         {
-            "name": "Volt UI",
-            "icon": "pi pi-bolt",
-            "href": "https://volt.primevue.org",
-            "badge": "NEW"
-        },
-        {
             "name": "Icons",
             "icon": "pi pi-eye",
             "children": [
@@ -531,45 +525,6 @@
                     "to": "/customicons"
                 }
             ]
-        },
-        {
-            "name": "Figma UI Kit",
-            "icon": "pi pi-pencil",
-            "children": [
-                {
-                    "name": "Overview",
-                    "to": "/uikit"
-                },
-                {
-                    "name": "Guide",
-                    "to": "/uikit/guide"
-                }
-            ]
-        },
-        {
-            "name": "Theme Designer",
-            "icon": "pi pi-sparkles",
-            "children": [
-                {
-                    "name": "Overview",
-                    "to": "/designer"
-                },
-                {
-                    "name": "Guide",
-                    "to": "/designer/guide"
-                }
-            ]
-        },
-        {
-            "name": "Templates",
-            "icon": "pi pi-heart",
-            "to": "/templates"
-        },
-        {
-            "name": "PrimeBlocks",
-            "icon": "pi pi-server",
-            "href": "https://primeblocks.org",
-            "badge": "NEW"
         },
         {
             "name": "Guides",
