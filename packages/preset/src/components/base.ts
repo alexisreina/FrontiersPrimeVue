@@ -1,5 +1,7 @@
 // https://github.com/primefaces/primeuix/blob/main/packages/themes/src/presets/lara/base/index.ts
-const primitive = {
+import type { LaraBaseTokenSections } from "@primeuix/themes/lara/base";
+
+const primitive: LaraBaseTokenSections.Primitive = {
     gray: {
         50: 'rgb(255, 255, 255)',
         100: 'rgb(247, 247, 247)',
@@ -90,10 +92,10 @@ const primitive = {
         800: 'rgb(11, 130, 150)',
         900: 'rgb(4, 99, 121)',
         950: 'rgb(0, 70, 89)',
-    },
+    }, 
 };
 
-const semantic = {
+const semantic: LaraBaseTokenSections.Semantic = {
     primary: {
         50: '{blue.50}',
         100: '{blue.100}',
@@ -106,6 +108,20 @@ const semantic = {
         800: '{blue.800}',
         900: '{blue.900}',
         950: '{blue.950}'
+    },
+    formField: {
+        paddingX: '1rem',
+        paddingY: '0.625rem',
+        sm: {
+            fontSize: '0.875rem',
+            paddingX: '0.75rem',
+            paddingY: '0.5rem',
+        },
+        lg: {
+            fontSize: '1.125rem',
+            paddingX: '1.125rem',
+            paddingY: '0.75rem',
+        },
     },
     colorScheme: {
         light: {
@@ -121,6 +137,12 @@ const semantic = {
                 700: '{gray.800}',
                 800: '{gray.900}',
                 900: '{gray.950}',
+            },
+            primary: {
+                color: '{primary.600}',
+                contrastColor: '#ffffff',
+                hoverColor: '{primary.700}',
+                activeColor: '{primary.800}'
             },
             text: {
                 color: '{surface.900}',
