@@ -62,12 +62,14 @@ import Aura from '@primeuix/themes/aura';
 import Lara from '@primeuix/themes/lara';
 import Material from '@primeuix/themes/material';
 import Nora from '@primeuix/themes/nora';
+import Frontiers from 'frontiers-primevue-preset';
 
 const presets = {
     Aura,
     Material,
     Lara,
-    Nora
+    Nora,
+    Frontiers,
 };
 
 export default {
@@ -269,10 +271,10 @@ export default {
                             colorScheme: {
                                 light: {
                                     primary: {
-                                        color: '{primary.500}',
+                                        color: '{primary.600}',
                                         contrastColor: '#ffffff',
-                                        hoverColor: '{primary.600}',
-                                        activeColor: '{primary.700}'
+                                        hoverColor: '{primary.700}',
+                                        activeColor: '{primary.800}'
                                     },
                                     highlight: {
                                         background: '{primary.50}',
