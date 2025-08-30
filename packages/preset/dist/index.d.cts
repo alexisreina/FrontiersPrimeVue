@@ -2,6 +2,5 @@ import * as _primeuix_themes_types0 from "@primeuix/themes/types";
 
 //#region src/index.d.ts
 declare const _default: _primeuix_themes_types0.Preset;
-//#endregion
-export { _default as default };
-//# sourceMappingURL=index.d.ts.map
+export = _default;
+//# sourceMappingURL=index.d.cts.map
