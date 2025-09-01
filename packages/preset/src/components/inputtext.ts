@@ -1,3 +1,3 @@
 // https://github.com/primefaces/primeuix/blob/main/packages/themes/src/presets/lara/inputtext/index.ts
-import inputtext from '@primeuix/themes/lara/inputtext';
-export default inputtext;
+import inputtext from "@primeuix/themes/lara/inputtext"
+export default inputtext

@@ -15,7 +15,18 @@
     "hot:dev": "DEV_ENV=hot pnpm --filter showcase dev",
     "build:showcase": "pnpm --filter showcase build",
     "build:preset": "pnpm --filter frontiers-primevue-preset build",
-    "build": "pnpm build:preset && pnpm build:showcase"
+    "build": "pnpm build:preset && pnpm build:showcase",
+    "format": "prettier --cache --write \"**/*.{js,ts,vue,json,md,scss,css,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,vue,json,md,scss,css,yml,yaml}\"",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,json,md,scss,css,yml,yaml}": [
+      "prettier --write"
+    ],
+    "ignore": [
+      "apps/showcase/**"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -26,6 +37,9 @@
   "type": "module",
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2"
   }
 }

@@ -17,16 +17,16 @@ yarn add frontiers-primevue-preset
 ### With PrimeVue Configuration
 
 ```javascript
-import { createApp } from 'vue';
-import PrimeVue from 'primevue/config';
-import FrontiersPreset from 'frontiers-primevue-preset';
+import { createApp } from "vue"
+import PrimeVue from "primevue/config"
+import FrontiersPreset from "frontiers-primevue-preset"
 
-const app = createApp(App);
+const app = createApp(App)
 app.use(PrimeVue, {
-    theme: {
-        preset: FrontiersPreset
-    }
-});
+  theme: {
+    preset: FrontiersPreset,
+  },
+})
 ```
 
 ### With Nuxt.js
@@ -34,15 +34,15 @@ app.use(PrimeVue, {
 ```javascript
 // nuxt.config.js
 export default defineNuxtConfig({
-  modules: ['@primevue/nuxt-module'],
+  modules: ["@primevue/nuxt-module"],
   primevue: {
     options: {
       theme: {
-        preset: frontiersPreset
-      }
-    }
-  }
-});
+        preset: frontiersPreset,
+      },
+    },
+  },
+})
 ```
 
 ## 🎨 What's Included
