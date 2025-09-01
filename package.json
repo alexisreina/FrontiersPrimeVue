@@ -18,7 +18,7 @@
     "build": "pnpm build:preset && pnpm build:showcase",
     "format": "prettier --cache --write \"**/*.{js,ts,vue,json,md,scss,css,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{js,ts,vue,json,md,scss,css,yml,yaml}\"",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,ts,vue,json,md,scss,css,yml,yaml}": [
