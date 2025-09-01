@@ -29,11 +29,13 @@ The `apps/showcase` directory is managed as a [git subtree](https://manpages.deb
 The subtree was initially set up with the following commands:
 
 1. **Add the remote repository:**
+
    ```bash
    git remote add primevue git@github.com:alexisreina/primevue.git -t showcase
    ```
 
 2. **Add the subtree:**
+
    ```bash
    git subtree add --prefix apps/showcase primevue showcase --squash
    ```
@@ -73,6 +75,7 @@ git push origin showcase
 In the Frontiers PrimeVue project:
 
 1. **Create a new feature branch:**
+
    ```bash
    git checkout main
    git pull origin main
@@ -80,17 +83,20 @@ In the Frontiers PrimeVue project:
    ```
 
 2. **Pull the latest changes:**
+
    ```bash
    git subtree pull --prefix apps/showcase primevue showcase --squash
    ```
 
 3. **Test the integration:**
+
    ```bash
    pnpm install
    pnpm dev
    ```
 
 4. **Commit and push:**
+
    ```bash
    git add .
    git commit -m "feat: update showcase from upstream PrimeVue
@@ -98,7 +104,7 @@ In the Frontiers PrimeVue project:
    - Updates showcase to latest PrimeVue version
    - Maintains custom theme integration
    - Resolves any merge conflicts"
-   
+
    git push origin update/showcase-$(date +%Y%m%d)
    ```
 
@@ -127,6 +133,7 @@ Follow the [Conventional Commits](https://www.conventionalcommits.org/) specific
 ```
 
 **Types:**
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -136,6 +143,7 @@ Follow the [Conventional Commits](https://www.conventionalcommits.org/) specific
 - `chore`: Build process or auxiliary tool changes
 
 **Examples:**
+
 ```bash
 git commit -m "feat(theme): add dark mode support for custom components"
 git commit -m "fix(showcase): resolve responsive layout issues on mobile"
@@ -185,6 +193,7 @@ When creating pull requests:
 If you encounter merge conflicts:
 
 1. **Resolve conflicts manually:**
+
    ```bash
    # Edit conflicted files
    git add <resolved-files>
@@ -199,6 +208,7 @@ If you encounter merge conflicts:
 #### Build Errors After Update
 
 1. **Clean and reinstall dependencies:**
+
    ```bash
    pnpm clean
    pnpm install
