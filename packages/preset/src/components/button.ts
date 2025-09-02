@@ -39,20 +39,20 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
         borderColor: "{blue.600}",
         hoverBorderColor: "{blue.800}",
         activeBorderColor: "{blue.600}",
-        // color: "{green.500}",
-        // hoverColor: "{green.500}",
-        // activeColor: "{green.800}",
+        color: "{surface.0}",
+        hoverColor: "{surface.0}",
+        activeColor: "{surface.0}",
       },
       secondary: {
         background: "{gray.900}",
-        hoverBackground: "{blue.950}",
+        hoverBackground: "{gray.950}",
         activeBackground: "{gray.900}",
         borderColor: "{gray.900}",
-        hoverBorderColor: "{blue.950}",
+        hoverBorderColor: "{gray.950}",
         activeBorderColor: "{gray.900}",
-        color: "rgba(255, 255, 255, 1)",
-        hoverColor: "rgba(255, 255, 255, 1)",
-        activeColor: "rgba(255, 255, 255, 1)",
+        color: "{surface.0}",
+        hoverColor: "{surface.0}",
+        activeColor: "{surface.0}",
       },
       info: {
         background: "{cyan.600}",
@@ -61,9 +61,9 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
         borderColor: "{cyan.600}",
         hoverBorderColor: "{cyan.800}",
         activeBorderColor: "{cyan.600}",
-        // color: "{green.500}",
-        // hoverColor: "{green.500}",
-        // activeColor: "{green.800}",
+        color: "{surface.0}",
+        hoverColor: "{surface.0}",
+        activeColor: "{surface.0}",
       },
       success: {
         background: "{green.600}",
@@ -72,9 +72,9 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
         borderColor: "{green.600}",
         hoverBorderColor: "{green.800}",
         activeBorderColor: "{green.600}",
-        // color: "{green.500}",
-        // hoverColor: "{green.500}",
-        // activeColor: "{green.800}",
+        color: "{surface.0}",
+        hoverColor: "{surface.0}",
+        activeColor: "{surface.0}",
       },
       warn: {
         background: "{orange.600}",
@@ -83,9 +83,9 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
         borderColor: "{orange.600}",
         hoverBorderColor: "{orange.800}",
         activeBorderColor: "{orange.600}",
-        // color: "{green.500}",
-        // hoverColor: "{green.500}",
-        // activeColor: "{green.800}",
+        color: "{surface.0}",
+        hoverColor: "{surface.0}",
+        activeColor: "{surface.0}",
       },
       help: {
         background: "{purple.600}",
@@ -94,9 +94,9 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
         borderColor: "{purple.600}",
         hoverBorderColor: "{purple.800}",
         activeBorderColor: "{purple.600}",
-        // color: "{green.500}",
-        // hoverColor: "{green.500}",
-        // activeColor: "{green.800}",
+        color: "{surface.0}",
+        hoverColor: "{surface.0}",
+        activeColor: "{surface.0}",
       },
       danger: {
         background: "{red.600}",
@@ -105,21 +105,118 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
         borderColor: "{red.600}",
         hoverBorderColor: "{red.800}",
         activeBorderColor: "{red.600}",
-        // color: "{green.500}",
-        // hoverColor: "{green.500}",
-        // activeColor: "{green.800}",
+        color: "{surface.0}",
+        hoverColor: "{surface.0}",
+        activeColor: "{surface.0}",
       },
       contrast: {
-        background: "rgba(255, 255, 255, 1)",
+        background: "{surface.0}",
         hoverBackground: "rgba(255, 255, 255, 0.72)",
-        activeBackground: "rgba(255, 255, 255, 1)",
-        borderColor: "rgba(255, 255, 255, 1)",
+        activeBackground: "{surface.0}",
+        borderColor: "{surface.0}",
         hoverBorderColor: "rgba(255, 255, 255, 0.72)",
-        activeBorderColor: "rgba(255, 255, 255, 1)",
+        activeBorderColor: "{surface.0}",
         color: "{gray.950}",
         hoverColor: "{gray.950}",
         activeColor: "{gray.950}",
       },
+    },
+    outlined: {
+      primary: {
+        hoverBackground: "{primary.50}",
+        activeBackground: "transparent",
+        borderColor: "{blue.600}",
+        color: "{blue.600}",
+      },
+      secondary: {
+        hoverBackground: "{surface.50}",
+        activeBackground: "transparent",
+        borderColor: "{gray.900}",
+        color: "{gray.900}",
+      },
+      success: {
+        hoverBackground: "{green.50}",
+        activeBackground: "transparent",
+        borderColor: "{green.600}",
+        color: "{green.600}",
+      },
+      info: {
+        hoverBackground: "{sky.50}",
+        activeBackground: "transparent",
+        borderColor: "{cyan.600}",
+        color: "{cyan.600}",
+      },
+      warn: {
+        hoverBackground: "{orange.50}",
+        activeBackground: "transparent",
+        borderColor: "{orange.600}",
+        color: "{orange.600}",
+      },
+      help: {
+        hoverBackground: "{purple.50}",
+        activeBackground: "transparent",
+        borderColor: "{purple.600}",
+        color: "{purple.600}",
+      },
+      danger: {
+        hoverBackground: "{red.50}",
+        activeBackground: "transparent",
+        borderColor: "{red.600}",
+        color: "{red.600}",
+      },
+      contrast: {
+        hoverBackground: "{surface.50}",
+        activeBackground: "transparent",
+        borderColor: "{surface.0}",
+        color: "{surface.0}",
+      },
+    },
+    text: {
+      primary: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{blue.600}",
+      },
+      secondary: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{gray.900}",
+      },
+      success: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{green.600}",
+      },
+      info: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{cyan.600}",
+      },
+      warn: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{orange.600}",
+      },
+      help: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{purple.600}",
+      },
+      danger: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{red.600}",
+      },
+      contrast: {
+        hoverBackground: "transparent",
+        activeBackground: "transparent",
+        color: "{surface.0}",
+      },
+    },
+    link: {
+      color: "{primary.color}",
+      hoverColor: "{primary.color}",
+      activeColor: "{primary.color}",
     },
   },
 }
@@ -129,8 +226,13 @@ export default { root, colorScheme }
 //  1. Default button and rounded will have same border radious - we dont need default without
 //  2. Removed button with shadow bellow
 //  3. We have discrapencies between color pallet included in - https://www.figma.com/design/jDOnqag4paB2kiJtu2AbqK/Foundations?node-id=4670-28718&m=dev
+//  4. Outline button discrapencies - Prime vue does not change border color on hover.
+//  5. Text button discrapencies - Prime vue change only background color on hover, not text color + underline
+//  6. Type link behaves like our text button - but it does not have color schemes
 
 // Questions:
-// How to use custom icons - there is a slot property for icons
 // Why focus ring is not applied ?
-// Why colors are not applied ?
+
+// @TODO:
+// Veirfiy icon only button
+// Add hover backgorunds
