@@ -27,7 +27,7 @@ const root: ButtonTokenSections.Root = {
   label: {
     fontWeight: "500",
   },
-  raisedShadow: "none",
+  raisedShadow: "{elevation.$light.bottom.10}",
 }
 export const colorScheme: ButtonTokenSections.ColorScheme = {
   light: {
@@ -123,49 +123,49 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
     },
     outlined: {
       primary: {
-        hoverBackground: "{primary.50}",
+        hoverBackground: "{gradient.$dark.8}",
         activeBackground: "transparent",
         borderColor: "{blue.600}",
         color: "{blue.600}",
       },
       secondary: {
-        hoverBackground: "{surface.50}",
+        hoverBackground: "{gradient.$dark.8}",
         activeBackground: "transparent",
         borderColor: "{gray.900}",
         color: "{gray.900}",
       },
       success: {
-        hoverBackground: "{green.50}",
+        hoverBackground: "{gradient.$dark.8}",
         activeBackground: "transparent",
         borderColor: "{green.600}",
         color: "{green.600}",
       },
       info: {
-        hoverBackground: "{sky.50}",
+        hoverBackground: "{gradient.$dark.8}",
         activeBackground: "transparent",
         borderColor: "{cyan.600}",
         color: "{cyan.600}",
       },
       warn: {
-        hoverBackground: "{orange.50}",
+        hoverBackground: "{gradient.$dark.8}",
         activeBackground: "transparent",
         borderColor: "{orange.600}",
         color: "{orange.600}",
       },
       help: {
-        hoverBackground: "{purple.50}",
+        hoverBackground: "{gradient.$dark.8}",
         activeBackground: "transparent",
         borderColor: "{purple.600}",
         color: "{purple.600}",
       },
       danger: {
-        hoverBackground: "{red.50}",
+        hoverBackground: "{gradient.$dark.8}",
         activeBackground: "transparent",
         borderColor: "{red.600}",
         color: "{red.600}",
       },
       contrast: {
-        hoverBackground: "{surface.50}",
+        hoverBackground: "{gradient.$light.8}",
         activeBackground: "transparent",
         borderColor: "{surface.0}",
         color: "{surface.0}",
@@ -223,16 +223,9 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
 export default { root, colorScheme }
 
 // NOTES:
-//  1. Default button and rounded will have same border radious - we dont need default without
-//  2. Removed button with shadow bellow
-//  3. We have discrapencies between color pallet included in - https://www.figma.com/design/jDOnqag4paB2kiJtu2AbqK/Foundations?node-id=4670-28718&m=dev
-//  4. Outline button discrapencies - Prime vue does not change border color on hover.
-//  5. Text button discrapencies - Prime vue change only background color on hover, not text color + underline
-//  6. Type link behaves like our text button - but it does not have color schemes
-
-// Questions:
-// Why focus ring is not applied ?
-
-// @TODO:
-// Veirfiy icon only button
-// Add hover backgorunds
+//  1. Default button and rounded will have same border radius - we dont need default without
+//  2. Customized raised type shadow
+//  3. Outline button discrapencies - Prime vue does not change border color on hover.
+//  4. Text button discrapencies - Prime vue change only background color on hover, not text color + underline
+//  5. Type link behaves like our text button - but it does not have color schemes
+//  6. Icon button discrapencies - We cannot apply custom padding to icon only button, so it gets weird in case of small and large size - we will need something custom
