@@ -95,7 +95,7 @@ const primitive: LaraBaseTokenSections.Primitive = {
   },
 }
 
-const semantic: LaraBaseTokenSections.Semantic = {
+const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
   primary: {
     50: "{blue.50}",
     100: "{blue.100}",
@@ -151,11 +151,49 @@ const semantic: LaraBaseTokenSections.Semantic = {
         mutedColor: "{surface.500}",
         hoverMutedColor: "{surface.600}",
       },
+      input: {
+        hoverBorderColor: "{form.field.border.color}",
+        checkedBackground: "{surface.900}",
+        checkedHoverBackground: "{surface.900}",
+        checkedBorderColor: "{surface.900}",
+        checkedHoverBorderColor: "{surface.900}",
+        checkedFocusBorderColor: "{surface.900}",
+      },
+    },
+    dark: {
+      input: {
+        hoverBorderColor: "{form.field.border.color}",
+        checkedBackground: "{surface.0}",
+        checkedHoverBackground: "{surface.0}",
+        checkedBorderColor: "{surface.0}",
+        checkedHoverBorderColor: "{surface.0}",
+        checkedFocusBorderColor: "{surface.0}",
+      },
     },
   },
 }
 
 export default { primitive, semantic }
+
+type Input = {
+  hoverBorderColor?: string
+  checkedBackground?: string
+  checkedHoverBackground?: string
+  checkedBorderColor?: string
+  checkedHoverBorderColor?: string
+  checkedFocusBorderColor?: string
+}
+
+type SemanticInput = {
+  colorScheme: {
+    light?: {
+      input?: Input
+    }
+    dark?: {
+      input?: Input
+    }
+  }
+}
 
 // $success-50: $green-50;
 // $success-20: $green-20;
