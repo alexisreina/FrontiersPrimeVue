@@ -185,7 +185,7 @@ export default definePreset(Lara, {
   },
   extend: {
     gradient: {
-      light: {
+      $light: {
         4: "rgba(255, 255, 255, 0.04)",
         8: "rgba(255, 255, 255, 0.08)",
         16: "rgba(255, 255, 255, 0.16)",
@@ -196,7 +196,7 @@ export default definePreset(Lara, {
         72: "rgba(255, 255, 255, 0.72)",
         80: "rgba(255, 255, 255, 0.80)",
       },
-      dark: {
+      $dark: {
         4: "rgba(40, 40, 40, 0.04)",
         8: "rgba(40, 40, 40, 0.08)",
         16: "rgba(40, 40, 40, 0.16)",
@@ -209,7 +209,7 @@ export default definePreset(Lara, {
       },
     },
     elevation: {
-      light: {
+      $light: {
         top: {
           10: "0 -1px 3px rgba(40, 40, 40, 0.04), 0 -1px 1px rgba(40, 40, 40, 0.08), 0 -1px 2px rgba(40, 40, 40, 0.12)",
           20: "0 -2px 4px rgba(40, 40, 40, 0.04), 0 -1px 10px rgba(40, 40, 40, 0.08), 0 -4px 5px rgba(40, 40, 40, 0.12)",
@@ -246,7 +246,7 @@ export default definePreset(Lara, {
           50: "-11px 0 15px 0 rgba(40, 40, 40, 0.04), -9px 0 46px 0 rgba(40, 40, 40, 0.08), -24px 0 38px 0 rgba(40, 40, 40, 0.12)",
         },
       },
-      dark: {
+      $dark: {
         top: {
           10: "0 -1px 3px rgba(40, 40, 40, 0.08), 0 -1px 1px rgba(40, 40, 40, 0.16), 0 -1px 2px rgba(40, 40, 40, 0.24)",
           20: "0 -2px 4px rgba(40, 40, 40, 0.08), 0 -1px 10px rgba(40, 40, 40, 0.16), 0 -4px 5px rgba(40, 40, 40, 0.24)",
