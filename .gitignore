@@ -28,3 +28,4 @@ coverage
 # Custom
 api-generator/typedoc.json
 apps/showcase/components.d.ts
+packages/preset/dist/**/* */
