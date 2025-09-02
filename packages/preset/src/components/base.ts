@@ -96,6 +96,7 @@ const primitive: LaraBaseTokenSections.Primitive = {
 }
 
 const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
+  disabledOpacity: "0.5",
   primary: {
     50: "{blue.50}",
     100: "{blue.100}",
