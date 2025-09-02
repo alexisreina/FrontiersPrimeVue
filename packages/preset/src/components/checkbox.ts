@@ -2,14 +2,12 @@
 import type { CheckboxTokenSections } from "@primeuix/themes/types/checkbox"
 
 export const root: CheckboxTokenSections.Root = {
-  width: "1.5rem",
-  height: "1.5rem",
   hoverBorderColor: "{input.hoverBorderColor}",
-  checkedBackground: "{input.checkedBackground}",
-  checkedHoverBackground: "{input.checkedHoverBackground}",
-  checkedBorderColor: "{input.checkedBorderColor}",
-  checkedHoverBorderColor: "{input.checkedHoverBorderColor}",
-  checkedFocusBorderColor: "{input.checkedFocusBorderColor}",
+  checkedBackground: "{input.checked.background}",
+  checkedHoverBackground: "{input.checked.hover.background}",
+  checkedBorderColor: "{input.checked.border.color}",
+  checkedHoverBorderColor: "{input.checked.hover.border.color}",
+  checkedFocusBorderColor: "{input.checked.focus.border.color}",
 }
 
 export const icon: CheckboxTokenSections.Icon = {
