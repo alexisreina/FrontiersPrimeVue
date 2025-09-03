@@ -110,6 +110,12 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
     900: "{blue.900}",
     950: "{blue.950}",
   },
+  overlay: {
+    popover: {
+      borderRadius: "{border.radius.xs}",
+      shadow: "{elevation.$light.bottom.20}",
+    },
+  },
   formField: {
     paddingX: "1rem",
     paddingY: "0.625rem",
