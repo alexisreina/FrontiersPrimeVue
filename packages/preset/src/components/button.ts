@@ -1,12 +1,10 @@
 // https://github.com/primefaces/primeuix/blob/main/packages/themes/src/presets/lara/button/index.ts
 import type { ButtonTokenSections } from "@primeuix/themes/lara/button"
 const root: ButtonTokenSections.Root = {
-  roundedBorderRadius: "8rem",
-  borderRadius: "8rem",
-  paddingY: "0.5rem",
+  roundedBorderRadius: "3rem",
+  paddingY: "calc(0.75rem - 1px)",
   paddingX: "1.5rem",
-  iconOnlyWidth: "1.5rem",
-  gap: "0.5rem",
+  iconOnlyWidth: "2.5rem",
   focusRing: {
     width: "1.25rem",
     style: "solid",
@@ -14,20 +12,20 @@ const root: ButtonTokenSections.Root = {
   },
   sm: {
     fontSize: "0.875rem",
-    paddingY: "0.25rem",
+    paddingY: "calc(0.5rem - 1px)",
     paddingX: "1rem",
-    iconOnlyWidth: "1rem",
+    iconOnlyWidth: "2rem",
   },
   lg: {
-    fontSize: "1.125rem",
+    fontSize: "1rem",
     paddingX: "2rem",
-    paddingY: "0.5rem",
-    iconOnlyWidth: "1.5rem",
+    paddingY: "calc(1rem - 1px)",
+    iconOnlyWidth: "3rem",
   },
   label: {
     fontWeight: "500",
   },
-  raisedShadow: "{elevation.$light.bottom.10}",
+  raisedShadow: "{elevation.$light.bottom.30}",
 }
 export const colorScheme: ButtonTokenSections.ColorScheme = {
   light: {
@@ -220,12 +218,74 @@ export const colorScheme: ButtonTokenSections.ColorScheme = {
     },
   },
 }
-export default { root, colorScheme }
+
+export const css: ButtonTokenSections.CSS = ({ dt }) => `
+  .p-button {
+    line-height: 1rem;
+  }
+  .p-button-icon-only {
+    padding-inline: 0.5rem;
+  }
+  .p-button-outlined:not(:disabled):hover {
+    border-color: ${dt("button.primary.hoverBackground")};
+    color: ${dt("button.primary.hoverBackground")};
+  }
+  .p-button-outlined.p-button-secondary:not(:disabled):hover {
+    border-color: ${dt("button.secondary.hoverBackground")};
+    color: ${dt("button.secondary.hoverBackground")};
+  }
+  .p-button-outlined.p-button-success:not(:disabled):hover {
+    border-color: ${dt("button.success.hoverBackground")};
+    color: ${dt("button.success.hoverBackground")};
+  }
+  .p-button-outlined.p-button-info:not(:disabled):hover {
+    border-color: ${dt("button.info.hoverBackground")};
+    color: ${dt("button.info.hoverBackground")};
+  }
+  .p-button-outlined.p-button-warn:not(:disabled):hover {
+    border-color: ${dt("button.warn.hoverBackground")};
+    color: ${dt("button.warn.hoverBackground")};
+  }
+  .p-button-outlined.p-button-help:not(:disabled):hover {
+    border-color: ${dt("button.help.hoverBackground")};
+    color: ${dt("button.help.hoverBackground")};
+  }
+  .p-button-outlined.p-button-danger:not(:disabled):hover {
+    border-color: ${dt("button.danger.hoverBackground")};
+    color: ${dt("button.danger.hoverBackground")};
+  }
+  .p-button-outlined.p-button-contrast:not(:disabled):hover {
+    border-color: ${dt("button.contrast.hoverBackground")};
+    color: ${dt("button.contrast.hoverBackground")};
+  }
+  .p-button-text:not(:disabled):hover {
+    text-decoration: underline;
+    color: ${dt("button.primary.hoverBackground")};
+  }
+  .p-button-text.p-button-secondary:not(:disabled):hover {
+    color: ${dt("button.secondary.hoverBackground")};
+  }
+  .p-button-text.p-button-success:not(:disabled):hover {
+    color: ${dt("button.success.hoverBackground")};
+  }
+  .p-button-text.p-button-info:not(:disabled):hover {
+    color: ${dt("button.info.hoverBackground")};
+  }
+  .p-button-text.p-button-warn:not(:disabled):hover {
+    color: ${dt("button.warn.hoverBackground")};
+  }
+  .p-button-text.p-button-help:not(:disabled):hover {
+    color: ${dt("button.help.hoverBackground")};
+  }
+  .p-button-text.p-button-danger:not(:disabled):hover {
+    color: ${dt("button.danger.hoverBackground")};
+  }
+  .p-button-text.p-button-contrast:not(:disabled):hover {
+    color: ${dt("button.contrast.hoverBackground")};
+  }
+`
+
+export default { root, colorScheme, css }
 
 // NOTES:
-//  1. Default button and rounded will have same border radius - we dont need default without
-//  2. Customized raised type shadow
-//  3. Outline button discrapencies - Prime vue does not change border color on hover.
-//  4. Text button discrapencies - Prime vue change only background color on hover, not text color + underline
-//  5. Type link behaves like our text button - but it does not have color schemes
-//  6. Icon button discrapencies - We cannot apply custom padding to icon only button, so it gets weird in case of small and large size - we will need something custom
+// 1. The rounded version of the primevue button is our default button
