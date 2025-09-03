@@ -285,4 +285,12 @@ export default definePreset(Lara, {
       },
     },
   },
+  css: ({ dt }) => `
+    input:not([type="hidden"]),
+    input:not([type="checkbox"]),
+    input:not([type="radio"]),
+    input:not([type="range"]) {
+      line-height: 1
+    }
+  `,
 })
