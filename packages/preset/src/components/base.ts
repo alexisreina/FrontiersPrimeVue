@@ -152,6 +152,21 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
         mutedColor: "{surface.500}",
         hoverMutedColor: "{surface.600}",
       },
+      formField: {
+        background: "{surface.0}",
+        disabledBackground: "{surface.300}",
+        filledBackground: "{surface.0}",
+        filledHoverBackground: "{surface.0}",
+        filledFocusBackground: "{surface.0}",
+        borderColor: "{surface.300}",
+        hoverBorderColor: "{surface.300}",
+        focusBorderColor: "{surface.300}",
+        invalidBorderColor: "{red.600}",
+        color: "{surface.950}",
+        disabledColor: "{surface.700}",
+        placeholderColor: "{surface.300}",
+        invalidPlaceholderColor: "{red.600}",
+      },
       input: {
         hoverBorderColor: "{form.field.border.color}",
         checkedBackground: "{surface.900}",
@@ -183,6 +198,7 @@ type Input = {
   checkedBorderColor?: string
   checkedHoverBorderColor?: string
   checkedFocusBorderColor?: string
+  inputTextBackground?: string
 }
 
 type SemanticInput = {
