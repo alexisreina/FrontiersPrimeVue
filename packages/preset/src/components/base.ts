@@ -95,7 +95,7 @@ const primitive: LaraBaseTokenSections.Primitive = {
   },
 }
 
-const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
+const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
   disabledOpacity: "0.5",
   primary: {
     50: "{blue.50}",
@@ -112,8 +112,9 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
   },
   overlay: {
     popover: {
-      borderRadius: "{border.radius.xs}",
+      borderRadius: "{border.radius.lg}",
       shadow: "{elevation.$light.bottom.20}",
+      padding: "1.5rem 1rem 1rem",
     },
   },
   formField: {
@@ -164,6 +165,7 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
         hoverColor: "{surface.800}",
         mutedColor: "{surface.500}",
         hoverMutedColor: "{surface.600}",
+        secondaryColor: "{surface.700}",
       },
       formField: {
         background: "{surface.0}",
@@ -191,6 +193,23 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
         checkedBorderColor: "{surface.900}",
         checkedHoverBorderColor: "{surface.900}",
         checkedFocusBorderColor: "{surface.900}",
+      },
+      overlay: {
+        select: {
+          background: "{surface.0}",
+          borderColor: "{surface.300}",
+          color: "{text.color}",
+        },
+        popover: {
+          background: "{surface.0}",
+          borderColor: "{surface.300}",
+          color: "{text.color}",
+        },
+        modal: {
+          background: "{surface.0}",
+          borderColor: "{surface.300}",
+          color: "{text.color}",
+        },
       },
     },
     dark: {
@@ -242,23 +261,33 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticInput = {
 
 export default { primitive, semantic }
 
-type Input = {
-  hoverBorderColor?: string
-  checkedBackground?: string
-  checkedHoverBackground?: string
-  checkedBorderColor?: string
-  checkedHoverBorderColor?: string
-  checkedFocusBorderColor?: string
-  inputTextBackground?: string
-}
-
-type SemanticInput = {
+type SemanticExtensions = {
   colorScheme: {
     light?: {
-      input?: Input
+      text?: {
+        secondaryColor?: string
+      }
+      input?: {
+        hoverBorderColor?: string
+        checkedBackground?: string
+        checkedHoverBackground?: string
+        checkedBorderColor?: string
+        checkedHoverBorderColor?: string
+        checkedFocusBorderColor?: string
+      }
     }
     dark?: {
-      input?: Input
+      text?: {
+        secondaryColor?: string
+      }
+      input?: {
+        hoverBorderColor?: string
+        checkedBackground?: string
+        checkedHoverBackground?: string
+        checkedBorderColor?: string
+        checkedHoverBorderColor?: string
+        checkedFocusBorderColor?: string
+      }
     }
   }
 }
