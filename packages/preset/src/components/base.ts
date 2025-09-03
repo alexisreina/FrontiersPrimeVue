@@ -119,7 +119,7 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
   },
   formField: {
     paddingX: "1rem",
-    paddingY: "0.625rem",
+    paddingY: "calc(0.625rem - 0.5px)",
     sm: {
       fontSize: "0.875rem",
       paddingX: "0.75rem",
@@ -177,13 +177,13 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         hoverBorderColor: "{surface.300}",
         focusBorderColor: "{surface.300}",
         invalidBorderColor: "{red.600}",
-        color: "{surface.950}",
-        disabledColor: "{surface.700}",
-        placeholderColor: "{surface.300}",
+        color: "{text.color}",
+        disabledColor: "{surface.300}",
+        placeholderColor: "{text.secondary.color}",
         invalidPlaceholderColor: "{red.600}",
-        floatLabelColor: "{surface.700}",
-        floatLabelFocusColor: "{surface.700}",
-        floatLabelActiveColor: "{surface.700}",
+        floatLabelColor: "{text.secondary.color}",
+        floatLabelFocusColor: "{text.secondary.color}",
+        floatLabelActiveColor: "{text.secondary.color}",
         floatLabelInvalidColor: "{red.600}",
       },
       input: {
