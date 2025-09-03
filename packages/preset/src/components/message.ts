@@ -155,10 +155,10 @@ export const extend: MessageTokenSections.Extend = {
 }
 
 export const css: MessageTokenSections.CSS = ({ dt }) => `
-  div[data-pc-name="message"] {
+  .p-message {
     position: relative;
   }
-  div[data-pc-name="message"]::before {
+  .p-message::before {
     content: "";
     position: absolute;
     z-index: 1;
@@ -168,31 +168,31 @@ export const css: MessageTokenSections.CSS = ({ dt }) => `
     height: 100%;
     outline: 1px solid;
   }
-  div[data-p*="info"]::before {
+  .p-message-info::before {
     background-color: ${dt("message.before.colorScheme.info.background")};
     outline-color: ${dt("message.before.colorScheme.info.background")};
   }
-  div[data-p*="success"]::before {
+  .p-message-success::before {
     background-color: ${dt("message.before.colorScheme.success.background")};
     outline-color: ${dt("message.before.colorScheme.success.background")};
   }
-  div[data-p*="warn"]::before {
+  .p-message-warn::before {
     background-color: ${dt("message.before.colorScheme.warn.background")};
     outline-color: ${dt("message.before.colorScheme.warn.background")};
   }
-  div[data-p*="error"]::before {
+  .p-message-error::before {
     background-color: ${dt("message.before.colorScheme.error.background")};
     outline-color: ${dt("message.before.colorScheme.error.background")};
   }
-  div[data-p*="secondary"]::before {
+  .p-message-secondary::before {
     background-color: ${dt("message.before.colorScheme.secondary.background")};
     outline-color: ${dt("message.before.colorScheme.secondary.background")};
   }
-  div[data-p*="contrast"]::before {
+  .p-message-contrast::before {
     background-color: ${dt("message.before.colorScheme.contrast.background")};
     outline-color: ${dt("message.before.colorScheme.contrast.background")};
   }
-  div[data-p*="simple"]::before, div[data-p*="outlined"]::before {
+  .p-message-simple::before, .p-message-outlined::before {
     content: none;
   }
 `
