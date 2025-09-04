@@ -26,13 +26,19 @@ Before running this project, make sure you have the following installed:
    pnpm install
    ```
 
-3. **Start the development server**
+3. **Link the packages** (required for first-time setup)
+
+   ```bash
+   pnpm run link
+   ```
+
+4. **Start the development server**
 
    ```bash
    pnpm dev
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to `http://localhost:3000` to view the showcase
 
 ### Alternative Setup
@@ -78,7 +84,6 @@ FrontiersPrimeVue/
 ```bash
 # Development
 pnpm dev              # Start showcase in development mode
-pnpm hot:dev          # Start with hot reload environment
 
 # Build & Preview
 pnpm build:showcase   # Build the showcase for production
