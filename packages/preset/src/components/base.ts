@@ -193,6 +193,7 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         checkedBorderColor: "{surface.900}",
         checkedHoverBorderColor: "{surface.900}",
         checkedFocusBorderColor: "{surface.900}",
+        inputtextInvalidBackground: "{red.50}",
       },
       overlay: {
         select: {
@@ -254,6 +255,7 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         checkedBorderColor: "{surface.0}",
         checkedHoverBorderColor: "{surface.0}",
         checkedFocusBorderColor: "{surface.0}",
+        inputtextInvalidBackground: "rgba(159, 2, 35, 0.50)",
       },
     },
   },
@@ -274,6 +276,7 @@ type SemanticExtensions = {
         checkedBorderColor?: string
         checkedHoverBorderColor?: string
         checkedFocusBorderColor?: string
+        inputtextInvalidBackground?: string
       }
     }
     dark?: {
@@ -287,6 +290,7 @@ type SemanticExtensions = {
         checkedBorderColor?: string
         checkedHoverBorderColor?: string
         checkedFocusBorderColor?: string
+        inputtextInvalidBackground?: string
       }
     }
   }

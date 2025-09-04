@@ -1,10 +1,20 @@
 // https://github.com/primefaces/primeuix/blob/main/packages/themes/src/presets/lara/inputtext/index.ts
-import inputtext from "@primeuix/themes/lara/inputtext"
-export default inputtext
+import type { InputTextTokenSections } from "@primeuix/themes/types/inputtext"
+
+const css: InputTextTokenSections.CSS = ({ dt }) => `
+  .p-inputtext:disabled {
+    border-color: ${dt("surface.200")};
+  }
+  .p-inputtext.p-variant-filled:disabled {
+    background-color: ${dt("surface.50")};
+  }
+  .p-inputtext.p-invalid, .p-inputtext.p-variant-filled.p-invalid, .p-inputtext.p-variant-filled.p-invalid:hover {
+    background-color: ${dt("input.inputtextInvalidBackground")};
+    border-color: ${dt("red.600")};
+  }
+`
+
+export default { css }
 
 // // Notes:
-// 1. Edited paddings to match the design system
-// 2. Missing key for disabled state border color
-// 3. Missing key for error state bg color
-// 4. Missing key for disabled+filled state bg color
-// 5. It is not possible to set white focus ring for dark value
+// 1. It is not possible to set white focus ring for dark value
