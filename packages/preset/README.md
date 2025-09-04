@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   primevue: {
     options: {
       theme: {
-        preset: frontiersPreset,
+        preset: FrontiersPreset,
       },
     },
   },
