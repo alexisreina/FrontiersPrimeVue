@@ -1,6 +1,6 @@
 {
   "name": "frontiers-primevue-preset",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "Frontiers custom preset for PrimeVue, based on Lara preset",
   "type": "module",
   "main": "./dist/index.js",
@@ -31,8 +31,8 @@
   "author": "Alexis Reina",
   "license": "ISC",
   "packageManager": "pnpm@10.15.0",
-  "dependencies": {
-    "@primeuix/themes": "catalog:"
+  "peerDependencies": {
+    "@primeuix/themes": "^1.0.0"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
