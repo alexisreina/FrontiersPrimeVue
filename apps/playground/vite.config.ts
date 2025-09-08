@@ -1,6 +1,6 @@
+import path from "node:path"
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
-import path from "node:path"
 import tailwindcss from "@tailwindcss/vite"
 
 const presetDistDir = path.resolve(__dirname, "../../packages/preset/dist")
@@ -21,7 +21,7 @@ function watchPresetDistPlugin() {
 }
 
 export default defineConfig({
-  plugins: [vue(), watchPresetDistPlugin(), tailwindcss()],
+  plugins: [vue(), tailwindcss(), watchPresetDistPlugin()],
   resolve: {
     dedupe: ["vue", "@primeuix/styles", "@primeuix/themes", "@primeuix/utils"],
     alias: {

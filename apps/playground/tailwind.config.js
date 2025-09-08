@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
   darkMode: ["selector", '[class="p-dark"]'],
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  plugins: [],
   theme: {
     extend: {
       fontFamily: {
@@ -17,11 +17,6 @@ export default {
           "sans-serif",
         ],
         "frontiers-icon": ["Frontiers Iconography", "monospace"],
-      },
-      fontWeight: {
-        light: "300",
-        medium: "500",
-        bold: "700",
       },
     },
     screens: {
