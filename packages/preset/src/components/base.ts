@@ -117,6 +117,21 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
       padding: "1.5rem 1rem 1rem",
     },
   },
+  list: {
+    // padding: "0.5rem 0",
+    // gap: "0",
+    // header: {
+    //   padding: "0.625rem 1rem 0 1rem",
+    // },
+    option: {
+      padding: "1rem 1rem",
+      // borderRadius: "0",
+    },
+    optionGroup: {
+      padding: "1rem 1rem",
+      fontWeight: "300",
+    },
+  },
   formField: {
     paddingX: "1rem",
     paddingY: "calc(0.625rem - 0.5px)",
@@ -186,6 +201,20 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         floatLabelActiveColor: "{text.secondary.color}",
         floatLabelInvalidColor: "{red.600}",
       },
+      list: {
+        option: {
+          focusBackground: "{surface.50}",
+          selectedBackground: "{surface.0}",
+          color: "{surface.700}",
+          focusColor: "{surface.900}",
+          selectedColor: "{surface.900}",
+          selectedFocusColor: "{surface.900}",
+          icon: {
+            color: "{surface.700}",
+            focusColor: "{surface.900}",
+          },
+        },
+      },
       input: {
         hoverBorderColor: "{form.field.border.color}",
         checkedBackground: "{surface.900}",
@@ -248,6 +277,21 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         floatLabelActiveColor: "{surface.0}",
         floatLabelInvalidColor: "{red.600}",
       },
+      // Styling night mode is tricky here - To Discuss
+      // list: {
+      //   option: {
+      //     focusBackground: "{surface.50}",
+      //     selectedBackground: "{surface.0}",
+      //     color: "{surface.700}",
+      //     focusColor: "{surface.900}",
+      //     selectedColor: "{surface.900}",
+      //     selectedFocusColor: "{surface.900}",
+      //     icon: {
+      //       color: "{surface.700}",
+      //       focusColor: "{surface.900}",
+      //     },
+      //   },
+      // },
       input: {
         hoverBorderColor: "{form.field.border.color}",
         checkedBackground: "{surface.0}",
