@@ -1,6 +1,6 @@
 {
     "name": "showcase",
-    "version": "4.3.7",
+    "version": "4.3.9",
     "author": "PrimeTek Informatics",
     "description": "",
     "homepage": "https://primevue.org/",
@@ -41,11 +41,11 @@
     "dependencies": {
         "@docsearch/js": "catalog:app",
         "@primeuix/themes": "catalog:",
-        "@primevue/core": "latest",
-        "@primevue/forms": "latest",
-        "@primevue/nuxt-module": "latest",
+        "@primevue/core": "catalog:",
+        "@primevue/forms": "catalog:",
+        "@primevue/nuxt-module": "catalog:",
         "primeicons": "catalog:",
-        "primevue": "latest",
+        "primevue": "catalog:",
         "frontiers-primevue-preset": "workspace:*",
         "chart.js": "catalog:app",
         "quill": "catalog:app",
