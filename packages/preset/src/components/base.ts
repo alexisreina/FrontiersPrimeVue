@@ -132,6 +132,12 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
       fontWeight: "300",
     },
   },
+  focusRing: {
+    width: "0.125rem",
+    style: "solid",
+    color: "{blue.600}",
+    offset: "0.125rem",
+  },
   formField: {
     paddingX: "1rem",
     paddingY: "calc(0.625rem - 0.5px)",
@@ -244,6 +250,10 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
           color: "{text.color}",
         },
       },
+      breadcrumb: {
+        textColor: "{surface.800}",
+        backgroundHoverColor: "{gradient.$dark.16}",
+      },
     },
     dark: {
       // Same as in light mode
@@ -307,6 +317,10 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         checkedFocusBorderColor: "{surface.0}",
         inputtextInvalidBackground: "rgba(159, 2, 35, 0.50)",
       },
+      breadcrumb: {
+        textColor: "{surface.0}",
+        backgroundHoverColor: "{gradient.$light.16}",
+      },
     },
   },
 }
@@ -331,6 +345,10 @@ type SemanticExtensions = {
       avatar?: {
         textColor?: string
       }
+      breadcrumb?: {
+        textColor?: string
+        backgroundHoverColor?: string
+      }
     }
     dark?: {
       text?: {
@@ -347,6 +365,10 @@ type SemanticExtensions = {
       }
       avatar?: {
         textColor?: string
+      }
+      breadcrumb?: {
+        textColor?: string
+        backgroundHoverColor?: string
       }
     }
   }
