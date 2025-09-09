@@ -224,6 +224,9 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         checkedFocusBorderColor: "{surface.900}",
         inputtextInvalidBackground: "{red.50}",
       },
+      avatar: {
+        textColor: "{surface.500}",
+      },
       overlay: {
         select: {
           background: "{surface.0}",
@@ -277,6 +280,9 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         floatLabelActiveColor: "{surface.0}",
         floatLabelInvalidColor: "{red.600}",
       },
+      avatar: {
+        textColor: "{surface.0}",
+      },
       // Styling night mode is tricky here - To Discuss
       // list: {
       //   option: {
@@ -322,6 +328,9 @@ type SemanticExtensions = {
         checkedFocusBorderColor?: string
         inputtextInvalidBackground?: string
       }
+      avatar?: {
+        textColor?: string
+      }
     }
     dark?: {
       text?: {
@@ -335,6 +344,9 @@ type SemanticExtensions = {
         checkedHoverBorderColor?: string
         checkedFocusBorderColor?: string
         inputtextInvalidBackground?: string
+      }
+      avatar?: {
+        textColor?: string
       }
     }
   }
