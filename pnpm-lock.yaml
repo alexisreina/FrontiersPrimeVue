@@ -32,7 +32,7 @@ catalogs:
       specifier: ^1.2.3
       version: 1.2.3
     primeicons:
-      specifier: ^7.0.0
+      specifier: 7.0.0
       version: 7.0.0
     primevue:
       specifier: ^4.3.8
@@ -66,6 +66,9 @@ importers:
       frontiers-primevue-preset:
         specifier: workspace:*
         version: link:../../packages/preset
+      primeicons:
+        specifier: 'catalog:'
+        version: 7.0.0
       primevue:
         specifier: 'catalog:'
         version: 4.3.9(vue@3.5.21(typescript@5.9.2))
