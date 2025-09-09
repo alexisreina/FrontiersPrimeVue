@@ -14246,7 +14246,7 @@
         "description": "Column component defines various options to specify corresponding features.\nIt is a helper component for DataTable and TreeTable.\n\n[Live Demo](https://www.primevue.org/datatable/)",
         "components": {
             "default": {
-                "description": "Column is a helper component for Column and TreeTable.",
+                "description": "Column is a helper component for DataTable and TreeTable.",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -24656,6 +24656,13 @@
                             "description": "Placeholder text for the input."
                         },
                         {
+                            "name": "required",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": ""
+                        },
+                        {
                             "name": "appendTo",
                             "optional": true,
                             "readonly": false,
@@ -26549,7 +26556,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">closeCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Close dialog function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">maximizeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Maximize/minimize dialog function.</span>\n}",
+                                    "type": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">closeCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Close dialog function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">maximizeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Maximize/minimize dialog function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">initDragCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Initialize drag function for custom container elements.</span>\n}",
                                     "description": "container slot's params."
                                 }
                             ],
@@ -66472,7 +66479,7 @@
                             "name": "selector",
                             "optional": true,
                             "readonly": false,
-                            "type": "HintedString<\"@next\" | \"@prev\" | \"@parent\" | \"@grandparent\">",
+                            "type": "string | string & Object",
                             "default": "",
                             "description": "Selector to define the target element. Available selectors are '@next', '@prev', '@parent' and '@grandparent'."
                         },
@@ -66547,6 +66554,22 @@
                             "type": "string",
                             "default": "",
                             "description": "Adds or removes a class when no enter-leave animation is required."
+                        },
+                        {
+                            "name": "hideOnResize",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Whether to trigger leave animation when the target element resized."
+                        },
+                        {
+                            "name": "resizeSelector",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "window",
+                            "description": "Target element to listen resize. Valid values are \"window\", \"document\" or target element."
                         },
                         {
                             "name": "dt",
@@ -73727,14 +73750,6 @@
                             "description": "Label for the off state."
                         },
                         {
-                            "name": "iconPos",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "HintedString<\"left\" | \"right\">",
-                            "default": "left",
-                            "description": "Position of the icon."
-                        },
-                        {
                             "name": "invalid",
                             "optional": true,
                             "readonly": false,
@@ -78820,9 +78835,14 @@
                         },
                         {
                             "name": "paginatorcontainer",
-                            "parameters": [],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom paginator container template."
+                            "parameters": [
+                                {
+                                    "name": "scope",
+                                    "optional": false,
+                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">first</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of first record</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">last</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of last record</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">rows</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Number of rows to display in new page</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">page</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// New page number</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">pageCount</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Total number of pages</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">pageLinks</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Direct page links</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">totalRecords</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Total records</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">firstPageCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// First page function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">lastPageCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Last page function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">prevPageCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Previous page function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">nextPageCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Next page function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">rowChangeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">value</span>: number) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Row change function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">changePageCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">value</span>: number) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Page change function.</span>\n}"
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]"
                         },
                         {
                             "name": "paginatorstart",

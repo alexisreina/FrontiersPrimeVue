@@ -28,7 +28,7 @@ export default {
                                 dashboard1: 'https://primefaces.org/cdn/primevue/images/templates/atlantis/atlantis-hero-dashboard1.png',
                                 dashboard2: 'https://primefaces.org/cdn/primevue/images/templates/atlantis/atlantis-hero-dashboard2.png',
                                 description: 'Prepare to be amazed by the remastered Atlantis for PrimeVue featuring a new gorgeous dark mode for the entire layout, 5 menu modes, reusable css widgets, utilities, modern icons and many more.',
-                                liveHref: 'https://www.primefaces.org/atlantis-vue/',
+                                liveHref: 'https://atlantis.primevue.org',
                                 docHref: 'https://www.primefaces.org/atlantis-vue/documentation/',
                                 pattern: {
                                     className: 'select-none absolute md:-bottom-28 bottom-36 -left-20 md:-left-28 z-[6] md:w-[50rem] h-auto w-[60rem] opacity-75',
@@ -75,7 +75,7 @@ export default {
                                 {
                                     id: 2,
                                     title: 'Component Themes',
-                                    description: 'Atlantis offers 16 built-in component themes with dark and light options. You are also free to create your own theme by defining couple SASS variables.',
+                                    description: '17 built-in theme colors with the power of 2 presets: Aura and Lara',
                                     src: 'https://primefaces.org/cdn/primevue/images/templates/atlantis/features-animation-component-themes.png'
                                 },
                                 {
