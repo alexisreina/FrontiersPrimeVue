@@ -2,57 +2,53 @@
 import type { TieredMenuTokenSections } from "@primeuix/themes/lara/tieredmenu"
 
 export const root: TieredMenuTokenSections.Root = {
-  background: "{gray.0}",
-  borderColor: "{gray.500}",
-  color: "{gray.500}",
-  borderRadius: "{content.border.radius}",
-  shadow: "{elevation.$light.bottom.40}",
+  background: "{context.menu.background}",
+  borderColor: "{context.menu.border.color}",
+  color: "{context.menu.color}",
+  borderRadius: "{context.menu.border.radius}",
+  shadow: "{context.menu.shadow}",
 }
 
 export const list: TieredMenuTokenSections.List = {
-  padding: "0 0 0.25rem",
-  gap: "0",
+  padding: "{context.menu.list.padding}",
+  gap: "{context.menu.list.gap}",
 }
 
 export const item: TieredMenuTokenSections.Item = {
-  focusBackground: "{gray.50}",
-  activeBackground: "{gray.50}",
-  color: "{gray.700}",
-  focusColor: "{gray.900}",
-  activeColor: "{gray.900}",
-  padding: "0.75rem 1rem",
-  borderRadius: "0",
-  gap: "0.5rem",
+  focusBackground: "{context.menu.item.focus.background}",
+  activeBackground: "{context.menu.item.focus.background}",
+  color: "{context.menu.item.color}",
+  focusColor: "{context.menu.item.focus.color}",
+  activeColor: "{context.menu.item.focus.color}",
+  padding: "{context.menu.item.padding}",
+  borderRadius: "{context.menu.item.border.radius}",
+  gap: "{context.menu.item.gap}",
   icon: {
-    color: "{gray.700}",
-    focusColor: "{gray.900}",
-    activeColor: "{gray.900}",
+    color: "{context.menu.item.icon.color}",
+    focusColor: "{context.menu.item.icon.focus.color}",
+    activeColor: "{context.menu.item.icon.focus.color}",
   },
-}
-
-export const submenu: TieredMenuTokenSections.Submenu = {
-  mobileIndent: "1.25rem",
 }
 
 export const submenuIcon: TieredMenuTokenSections.SubmenuIcon = {
   size: "1rem",
-  color: "{gray.500}",
-  focusColor: "{gray.900}",
-  activeColor: "{gray.900}",
+  color: "{context.menu.item.icon.color}",
+  focusColor: "{context.menu.item.icon.focus.color}",
+  activeColor: "{context.menu.item.icon.focus.color}",
 }
 
 export const separator: TieredMenuTokenSections.Separator = {
-  borderColor: "{gray.500}",
+  borderColor: "{context.menu.separator.border.color}",
 }
 
 export const css: TieredMenuTokenSections.CSS = ({ dt }) => `
 .p-contextmenu-submenu-label {
-  border-bottom: 1px solid ${dt("{gray.500}")};
-  margin-bottom: 5px;
+  border-bottom:  ${dt("{context.menu.separator.border.color}")};
+  margin-bottom: ${dt("{context.menu.separator.margin.bottom}")};
 }
 
 .p-contextmenu-item-link{
-  font-weight: 300;
+   font-weight: ${dt("{context.menu.item.link.font.weight}")};
 }
 `
 
@@ -60,7 +56,6 @@ export default {
   root,
   list,
   item,
-  submenu,
   submenuIcon,
   separator,
   css,

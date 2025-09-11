@@ -177,6 +177,32 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
       shadow: "none",
     },
   },
+  contextMenu: {
+    background: "{gray.0}",
+    borderColor: "{gray.500}",
+    color: "{gray.500}",
+    borderRadius: "{content.border.radius}",
+    shadow: "{elevation.$light.bottom.40}",
+    listPadding: "0 0 0.25rem",
+    listGap: "0",
+    itemFocusBackground: "{gray.50}",
+    itemColor: "{gray.700}",
+    itemFocusColor: "{gray.900}",
+    itemPadding: "0.75rem 1rem",
+    itemBorderRadius: "0",
+    itemGap: "0.5rem",
+    itemIconColor: "{gray.700}",
+    itemIconFocusColor: "{gray.900}",
+    itemIconActiveColor: "{gray.900}",
+    submenuLabelPadding: "0.75rem 1rem 0.5rem",
+    submenuLabelFontWeight: "500",
+    submenuLabelBackground: "{gray.0}",
+    submenuLabelColor: "{gray.900}",
+    submenuLabelBorderBottom: "1px solid {gray.500}",
+    submenuLabelMarginBottom: "5px",
+    separatorBorderColor: "{gray.500}",
+    itemLinkFontWeight: "300",
+  },
   colorScheme: {
     light: {
       surface: {
@@ -369,6 +395,32 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
 export default { primitive, semantic }
 
 type SemanticExtensions = {
+  contextMenu?: {
+    background?: string
+    borderColor?: string
+    color?: string
+    borderRadius?: string
+    shadow?: string
+    listPadding?: string
+    listGap?: string
+    itemFocusBackground?: string
+    itemColor?: string
+    itemFocusColor?: string
+    itemPadding?: string
+    itemBorderRadius?: string
+    itemGap?: string
+    itemIconColor?: string
+    itemIconFocusColor?: string
+    itemIconActiveColor?: string
+    submenuLabelPadding?: string
+    submenuLabelFontWeight?: string
+    submenuLabelBackground?: string
+    submenuLabelColor?: string
+    submenuLabelBorderBottom?: string
+    submenuLabelMarginBottom?: string
+    separatorBorderColor?: string
+    itemLinkFontWeight?: string
+  }
   colorScheme: {
     light?: {
       text?: {
