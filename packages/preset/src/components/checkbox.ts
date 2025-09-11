@@ -2,7 +2,7 @@
 import type { CheckboxTokenSections } from "@primeuix/themes/types/checkbox"
 
 export const root: CheckboxTokenSections.Root = {
-  hoverBorderColor: "{input.hoverBorderColor}",
+  hoverBorderColor: "{input.hover.border.color}",
   checkedBackground: "{input.checked.background}",
   checkedHoverBackground: "{input.checked.hover.background}",
   checkedBorderColor: "{input.checked.border.color}",

@@ -132,6 +132,24 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
       fontWeight: "300",
     },
   },
+  navigation: {
+    list: {
+      padding: "0.5rem 0",
+      gap: "0",
+    },
+    item: {
+      padding: "0.625rem 1rem",
+      borderRadius: "0",
+      gap: "0.5rem",
+    },
+    submenuLabel: {
+      padding: "0.625rem 1rem",
+      fontWeight: "600",
+    },
+    submenuIcon: {
+      size: "0.875rem",
+    },
+  },
   focusRing: {
     width: "0.125rem",
     style: "solid",
@@ -158,6 +176,32 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
       offset: "0.125rem",
       shadow: "none",
     },
+  },
+  contextMenu: {
+    background: "{gray.0}",
+    borderColor: "{gray.500}",
+    color: "{gray.500}",
+    borderRadius: "{content.border.radius}",
+    shadow: "{elevation.$light.bottom.40}",
+    listPadding: "0 0 0.25rem",
+    listGap: "0",
+    itemFocusBackground: "{gray.50}",
+    itemColor: "{gray.700}",
+    itemFocusColor: "{gray.900}",
+    itemPadding: "0.75rem 1rem",
+    itemBorderRadius: "0",
+    itemGap: "0.5rem",
+    itemIconColor: "{gray.700}",
+    itemIconFocusColor: "{gray.900}",
+    itemIconActiveColor: "{gray.900}",
+    submenuLabelPadding: "0.75rem 1rem 0.5rem",
+    submenuLabelFontWeight: "500",
+    submenuLabelBackground: "{gray.0}",
+    submenuLabelColor: "{gray.900}",
+    submenuLabelBorderBottom: "1px solid {gray.500}",
+    submenuLabelMarginBottom: "5px",
+    separatorBorderColor: "{gray.500}",
+    itemLinkFontWeight: "300",
   },
   colorScheme: {
     light: {
@@ -254,6 +298,29 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         textColor: "{surface.800}",
         backgroundHoverColor: "{gradient.$dark.16}",
       },
+      navigation: {
+        item: {
+          focusBackground: "{surface.100}",
+          activeBackground: "{surface.100}",
+          color: "{text.color}",
+          focusColor: "{text.hover.color}",
+          activeColor: "{text.hover.color}",
+          icon: {
+            color: "{surface.400}",
+            focusColor: "{surface.500}",
+            activeColor: "{surface.500}",
+          },
+        },
+        submenuLabel: {
+          background: "transparent",
+          color: "{text.color}",
+        },
+        submenuIcon: {
+          color: "{surface.400}",
+          focusColor: "{surface.500}",
+          activeColor: "{surface.500}",
+        },
+      },
     },
     dark: {
       // Same as in light mode
@@ -328,6 +395,32 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
 export default { primitive, semantic }
 
 type SemanticExtensions = {
+  contextMenu?: {
+    background?: string
+    borderColor?: string
+    color?: string
+    borderRadius?: string
+    shadow?: string
+    listPadding?: string
+    listGap?: string
+    itemFocusBackground?: string
+    itemColor?: string
+    itemFocusColor?: string
+    itemPadding?: string
+    itemBorderRadius?: string
+    itemGap?: string
+    itemIconColor?: string
+    itemIconFocusColor?: string
+    itemIconActiveColor?: string
+    submenuLabelPadding?: string
+    submenuLabelFontWeight?: string
+    submenuLabelBackground?: string
+    submenuLabelColor?: string
+    submenuLabelBorderBottom?: string
+    submenuLabelMarginBottom?: string
+    separatorBorderColor?: string
+    itemLinkFontWeight?: string
+  }
   colorScheme: {
     light?: {
       text?: {
