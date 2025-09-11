@@ -178,7 +178,7 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
     },
   },
   contextMenu: {
-    background: "{gray.0}",
+    background: "#ffffff",
     borderColor: "{gray.500}",
     color: "{gray.500}",
     borderRadius: "{content.border.radius}",
