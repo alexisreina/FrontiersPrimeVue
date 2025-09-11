@@ -1,23 +1,25 @@
 <template>
-  <div class="card flex justify-center">
-    <Menu :model="items" />
-  </div>
-  <div class="card flex justify-center">
-    <Button
-      type="button"
-      @click="toggle"
-      aria-haspopup="true"
-      aria-controls="overlay_menu" />
-    <Menu ref="menu" id="overlay_menu" :model="items" :popup="true" />
-  </div>
-  <div class="card text-center">
-    <p class="mb-0">
-      Right-Click anywhere on this page to view the global ContextMenu.
-    </p>
-    <ContextMenu global :model="items2" />
-  </div>
-  <div class="card flex justify-center">
-    <TieredMenu :model="items" />
+  <div class="bg-gray-100 p-10">
+    <div class="card flex justify-center">
+      <Menu :model="items" />
+    </div>
+    <div class="card flex justify-center">
+      <Button
+        type="button"
+        @click="toggle"
+        aria-haspopup="true"
+        aria-controls="overlay_menu" />
+      <Menu ref="menu" id="overlay_menu" :model="items" :popup="true" />
+    </div>
+    <div class="card text-center">
+      <p class="mb-0">
+        Right-Click anywhere on this page to view the global ContextMenu.
+      </p>
+      <ContextMenu global :model="items2" />
+    </div>
+    <div class="card flex justify-center">
+      <TieredMenu :model="items3" />
+    </div>
   </div>
 </template>
 

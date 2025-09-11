@@ -50,6 +50,9 @@ export const css: ContextMenuTokenSections.CSS = ({ dt }) => `
 .p-contextmenu-item-link{
   font-weight: ${dt("{context.menu.item.link.font.weight}")};
 }
+
+.p-contextmenu-root-list:not(:has(> .p-contextmenu-submenu-label:first-child)) > .p-contextmenu-item:first-child .p-contextmenu-item-content {
+  border-radius: ${dt("{{context.menu.border.radius}}")} ${dt("{{context.menu.border.radius}}")} 0 0;
 `
 
 export default {
