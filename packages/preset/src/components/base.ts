@@ -132,6 +132,24 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
       fontWeight: "300",
     },
   },
+  navigation: {
+    list: {
+      padding: "0.5rem 0",
+      gap: "0",
+    },
+    item: {
+      padding: "0.625rem 1rem",
+      borderRadius: "0",
+      gap: "0.5rem",
+    },
+    submenuLabel: {
+      padding: "0.625rem 1rem",
+      fontWeight: "600",
+    },
+    submenuIcon: {
+      size: "0.875rem",
+    },
+  },
   focusRing: {
     width: "0.125rem",
     style: "solid",
@@ -253,6 +271,29 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
       breadcrumb: {
         textColor: "{surface.800}",
         backgroundHoverColor: "{gradient.$dark.16}",
+      },
+      navigation: {
+        item: {
+          focusBackground: "{surface.100}",
+          activeBackground: "{surface.100}",
+          color: "{text.color}",
+          focusColor: "{text.hover.color}",
+          activeColor: "{text.hover.color}",
+          icon: {
+            color: "{surface.400}",
+            focusColor: "{surface.500}",
+            activeColor: "{surface.500}",
+          },
+        },
+        submenuLabel: {
+          background: "transparent",
+          color: "{text.color}",
+        },
+        submenuIcon: {
+          color: "{surface.400}",
+          focusColor: "{surface.500}",
+          activeColor: "{surface.500}",
+        },
       },
     },
     dark: {
