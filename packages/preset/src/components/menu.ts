@@ -46,6 +46,9 @@ export const css: MenuTokenSections.CSS = ({ dt }) => `
 .p-menu-item-link{
   font-weight: ${dt("{context.menu.item.link.font.weight}")};
 }
+  .p-menu-list:not(:has(> .p-menu-submenu-label:first-child)) > .p-menu-item:first-child .p-menu-item-content {
+  border-radius: ${dt("{{context.menu.border.radius}}")} ${dt("{{context.menu.border.radius}}")} 0 0;
+}
 
 `
 

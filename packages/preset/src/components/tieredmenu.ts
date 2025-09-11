@@ -42,14 +42,16 @@ export const separator: TieredMenuTokenSections.Separator = {
 }
 
 export const css: TieredMenuTokenSections.CSS = ({ dt }) => `
-.p-contextmenu-submenu-label {
+.p-tieredmenu-submenu-label {
   border-bottom:  ${dt("{context.menu.separator.border.color}")};
   margin-bottom: ${dt("{context.menu.separator.margin.bottom}")};
 }
 
-.p-contextmenu-item-link{
+.p-tieredmenu-item-link{
    font-weight: ${dt("{context.menu.item.link.font.weight}")};
 }
+.p-tieredmenu-root-list:not(:has(> .p-tieredmenu-submenu-label:first-child)) > .p-tieredmenu-item:first-child .p-tieredmenu-item-content {
+  border-radius: ${dt("{{context.menu.border.radius}}")} ${dt("{{context.menu.border.radius}}")} 0 0;
 `
 
 export default {
