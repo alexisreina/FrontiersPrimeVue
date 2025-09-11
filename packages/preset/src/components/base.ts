@@ -251,6 +251,9 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         floatLabelActiveColor: "{text.secondary.color}",
         floatLabelInvalidColor: "{red.600}",
       },
+      content: {
+        borderColor: "{surface.300}",
+      },
       list: {
         option: {
           focusBackground: "{surface.50}",
