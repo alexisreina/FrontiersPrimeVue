@@ -12,11 +12,11 @@ export const title: DialogTokenSections.Title = {
 }
 
 export const content: DialogTokenSections.Content = {
-  padding: "0.5rem 2rem 1.5rem",
+  padding: "0.5rem 2rem 2rem",
 }
 
 export const footer: DialogTokenSections.Footer = {
-  padding: "1.5rem 2rem",
+  padding: "1rem 2rem 1.5rem",
   gap: "1rem",
 }
 

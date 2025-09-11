@@ -120,7 +120,7 @@ var e=Object.create,ee=Object.defineProperty,t=Object.getOwnPropertyDescriptor,t
   .p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody > tr > td {
     border-color: ${e(`datatable.border.color`)};
   }
-`;var Et={headerCell:_t,columnTitle:vt,bodyCell:yt,columnFooter:bt,footerCell:xt,footer:St,colorScheme:Ct,paginatorBottom:wt,css:Tt},Dt=h.default,Ot=g.default;const kt={padding:`2rem 1rem 2rem 2rem`,gap:`0.5rem`},At={fontSize:`1.125rem`,fontWeight:`600`},jt={padding:`0.5rem 2rem 1.5rem`},Mt={padding:`1.5rem 2rem`,gap:`1rem`},Nt=({dt:e})=>`
+`;var Et={headerCell:_t,columnTitle:vt,bodyCell:yt,columnFooter:bt,footerCell:xt,footer:St,colorScheme:Ct,paginatorBottom:wt,css:Tt},Dt=h.default,Ot=g.default;const kt={padding:`2rem 1rem 2rem 2rem`,gap:`0.5rem`},At={fontSize:`1.125rem`,fontWeight:`600`},jt={padding:`0.5rem 2rem 2rem`},Mt={padding:`1rem 2rem 1.5rem`,gap:`1rem`},Nt=({dt:e})=>`
   .p-dialog-header-actions {
     position: absolute;
     top: 0.5rem;

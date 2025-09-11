@@ -120,7 +120,7 @@ import{definePreset as e}from"@primeuix/themes";import t from"@primeuix/themes/l
   .p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody > tr > td {
     border-color: ${e(`datatable.border.color`)};
   }
-`},Ae=u,je=d,Me={header:{padding:`2rem 1rem 2rem 2rem`,gap:`0.5rem`},title:{fontSize:`1.125rem`,fontWeight:`600`},content:{padding:`0.5rem 2rem 1.5rem`},footer:{padding:`1.5rem 2rem`,gap:`1rem`},css:({dt:e})=>`
+`},Ae=u,je=d,Me={header:{padding:`2rem 1rem 2rem 2rem`,gap:`0.5rem`},title:{fontSize:`1.125rem`,fontWeight:`600`},content:{padding:`0.5rem 2rem 2rem`},footer:{padding:`1rem 2rem 1.5rem`,gap:`1rem`},css:({dt:e})=>`
   .p-dialog-header-actions {
     position: absolute;
     top: 0.5rem;
