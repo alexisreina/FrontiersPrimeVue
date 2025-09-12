@@ -27,4 +27,4 @@ export default {
       "2xl": "1920px",
     },
   },
-}
+}``
