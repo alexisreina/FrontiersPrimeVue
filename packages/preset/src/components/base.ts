@@ -324,6 +324,12 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
           activeColor: "{surface.500}",
         },
       },
+      selectbutton: {
+        color: "{surface.800}",
+        borderColor: "{surface.500}",
+        hoverColor: "{surface.900}",
+        activeColor: "{surface.0}",
+      },
     },
     dark: {
       // Same as in light mode
@@ -391,6 +397,12 @@ const semantic: LaraBaseTokenSections.Semantic & SemanticExtensions = {
         textColor: "{surface.0}",
         backgroundHoverColor: "{gradient.$light.16}",
       },
+      selectbutton: {
+        color: "{blue.600}",
+        borderColor: "{surface.600}",
+        hoverColor: "{blue.800}",
+        activeColor: "{surface.0}",
+      },
     },
   },
 }
@@ -445,6 +457,12 @@ type SemanticExtensions = {
         textColor?: string
         backgroundHoverColor?: string
       }
+      selectbutton?: {
+        color?: string
+        borderColor?: string
+        hoverColor?: string
+        activeColor?: string
+      }
     }
     dark?: {
       text?: {
@@ -465,6 +483,12 @@ type SemanticExtensions = {
       breadcrumb?: {
         textColor?: string
         backgroundHoverColor?: string
+      }
+      selectbutton?: {
+        color?: string
+        borderColor?: string
+        hoverColor?: string
+        activeColor?: string
       }
     }
   }
